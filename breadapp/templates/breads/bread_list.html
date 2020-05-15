@@ -1,0 +1,13 @@
+{% extends 'shared/base.html' %}
+{%block content%}
+<div>
+    <h1>List of Breads</h1>
+
+        <ul>
+            {% for bread in all_breads %}
+            <li>{{bread.name}}
+            {% endfor %}
+        </ul
+
+</div>
+{%endblock%}

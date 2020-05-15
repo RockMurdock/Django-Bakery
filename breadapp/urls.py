@@ -3,4 +3,7 @@ from .views import *
 
 app_name = "breadapp"
 
-urlpatterns = []
+urlpatterns = [
+    path('', bread_list, name='bread_list'),
+ 
+]
