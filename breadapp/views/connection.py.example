@@ -1,2 +1,0 @@
-class Connection:
-    db_path = "/absolute/path/to/bakery/breadapp/db.sqlite3"
