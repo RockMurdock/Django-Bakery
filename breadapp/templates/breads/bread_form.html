@@ -1,0 +1,23 @@
+{% extends 'shared/base.html' %}
+{% block content %}
+<div>
+<h1> Bread Form </h1>
+
+<form action="{% url 'breadapp:bread_list' %}" method="post">
+    {% csrf_token %}
+
+    <fieldset>
+        <label for="name">Bread Name:</label>
+        <input type="text" name="name" id="name" />
+    </fieldset>
+
+    <fieldset>
+        <label for="region">Bread Region:</label>
+        <input type="text" name="region" id="region" />
+    </fieldset>
+
+    <fieldset>
+        <input type="submit" />
+    </fieldset>
+</div>
+{% endblock %}

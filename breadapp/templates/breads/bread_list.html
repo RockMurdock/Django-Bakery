@@ -3,6 +3,7 @@
 <div>
     <h1>List of Breads</h1>
 
+        <a href="{% url 'breadapp:bread_form' %}">Add Bread Type</a>
         <ul>
             {% for bread in all_breads %}
             <li>{{bread.name}}
